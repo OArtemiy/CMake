@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.28)
 project(main VERSION 0.1.0 LANGUAGES C CXX)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_COLOR_DIAGNOSTICS ON)
+
+set(CMAKE_CXX_STANDARD 20)
 add_compile_options(-Wall)
-include_directories(~/CppHeaders)
 
 include(CTest)
 enable_testing()
